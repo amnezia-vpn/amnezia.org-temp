@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="ru" prefix="og: http://ogp.me/ns#">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Amnezia - Shadowsocks + Cloak на Android </title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <link rel="apple-touch-icon" sizes="180x180" href="/img/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/img/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/img/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
+    <meta name="msapplication-config" content="/browserconfig.xml"/>
+    <meta name="msapplication-TileColor" content="#100A44">
+    <meta name="theme-color" content="#100A44">
+
+    <!--
+        <meta property="og:type" content="website"/>
+        <meta property="og:title" content="Amnezia"/>
+        <meta property="og:url" content="https://yandex.ru/"/>  !!!!!! ДОБАВИТЬ ССЫЛКУ НА САЙТ
+        <meta property="og:image" content="https://openrunet.org/img/OG-image.png"/> !!!!!!1 ДОБАВИТЬ ССЫЛКУ НА КАРТИНКУ
+        <meta property="og:site_name" content="Amnezia">
+        <meta property="og:description" content="Ваш персональный приватный VPN"/> !!! ОПИСАНИЕ
+        <meta name="twitter:title" content="Amnezia"/>
+        <meta name="twitter:description" content="Ваш персональный приватный VPN"/> !!! ОПИСАНИЕ
+        <meta name="twitter:image" content="https://openrunet.org/img/OG-image.png"/>  !!!!!! ДОБАВИТЬ ССЫЛКУ НА КАРТИНКУ
+        <meta name="twitter:card" content="summary_large_image"/>
+        <meta name="twitter:site" content="@RAmnezia"/>
+        -->
+</head>
+
+<body>
+    <section class="instruction" id="instruction">
+        <div class="block-top-wrapper">
+            <div class="block block-top">
+                <div class="section_in">
+                    <div class="block-top-inner">
+                        <a href="https://amnezia.org/ru" class="href href-logo">
+                            <img src="/img/logo.svg" class="logo logo-personal" width="94" height="25" alt="Amnezia"/>
+                        </a>
+                        <a href="/" class="href">Инструкции</a>
+                        <h2 class="header header-block-top">ShadowSocks с плагином Cloak для Windows</h2>
+
+                    </div>
+                    <div class="lang_block">
+                        <div class="lang_title"><span>Русский</span><span>Ru</span>
+                            <div class="lang_arrow_w">
+                                <img src="/img/icons/angle-right.svg" alt="" class="lang_arrow">
+                            </div>
+                        </div>
+                        <ul class="lang_list">
+                            <li class="lang_item">
+                                <a href="https://en-docs.amnezia.org/guides/cloak-ss-win/"
+                                   class="lang_link">
+                                    <span>English</span>
+                                    <span>En</span>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="block block-guide-step">
+            <div class="step-1-inner">
+                <div class="text text-step">
+                    <b>Использование протокола ShadowSocks с плагином Cloak пока не поддерживается клиентом Amnezia,
+                        однако можно установить и настроить ShadowSocks и Cloak с помощью клиента Amnezia,
+                        а их связку использовать в оригинальном клиенте ShadowSocks.</b>
+                </div>
+            </div>
+            <div class="step-1-inner">
+                <p>
+                    1. Покупаем VPS у любого хостинг-провайдера (Amnezia работает с любыми серверами с операционной системой Ubuntu (официально поддерживаемая версия - 20.04), так же поддерживается Debian 10).
+                </p>
+                <p>
+                    2. Скачиваем приложение Amnezia на Windows версии 2.0.2, подключаемся через него к серверу. Вносим данные VPS в приложение, выбираем <b>“Configure VPN protocols manually”</b>, выбираем протокол <b>OpenVPN over Cloak</b>.
+                </p>
+            </div>
+
+            <div class="instr-section-multiple-images">
+                <img src="screens/clsswin1.png" alt=""/>
+                <img src="screens/clsswin2.png" alt=""/>
+            </div>
+
+        </div>
+
+        <div class="block block-guide-step">
+            <div class="step-1-inner">
+                <p>3. Скачиваем и распаковываем клиент ShadowSocks, нам нужен .exe файл. <a href="https://github.com/shadowsocks/shadowsocks-windows/releases">https://github.com/shadowsocks/shadowsocks-windows/releases</a></p>
+                <p>4. Скачиваем <a href="https://github.com/cbeuw/Cloak/releases/tag/v2.6.1.">Cloak для Windows</a> (ck-client-windows-386 для 32-битных систем или ck-client-windows-amd64 для 64-битных систем)</p>
+                <p>5. Перемещаем установленный плагин Cloak (т.е. просто .exe файл) в распакованную ранее папку Shadowsocks - плагин будет находиться в одной папке с Shadowsocks.exe</p>
+                <p>6. Переименовываем плагин в "cloak" (без кавычек, просто cloak)</p>
+
+                <div class="instr-section-multiple-images">
+                    <img src="screens/clsswin3.png" alt=""/>
+                </div>
+            </div>
+        </div>
+
+        <div class="block block-guide-step">
+            <div class="step-1-inner">
+                <p>7. Запускаем Shadowsocks на Windows, в трее щелкаем по нему правой кнопкой и нажимаем на <b>"Ассоциированный ss:// ссылки"</b></p>
+                <div class="instr-section-single-image">
+                    <img src="screens/clsswin4.png" alt=""/>
+                </div>
+            </div>
+        </div>
+
+        <div class="block block-guide-step">
+            <div class="step-1-inner">
+                <p>8. Открываем в Windows Amnezia - <b>"Share connection"</b> - <b>"Share connection for Shadowsocks"</b> . Сначала выберете протокол <b>OpenVPN over Cloak</b>, далее зайдите в настройки, выберете <b>“Share connection”</b> => <b>“Share for ShadowSocks”</b></p>
+
+                <div class="instr-section-multiple-images">
+                    <img src="screens/clsswin5.png" alt=""/>
+                    <img src="screens/clsswin6.png" alt=""/>
+                    <img src="screens/clsswin7.png" alt=""/>
+                </div>
+            </div>
+        </div>
+
+        <div class="block block-guide-step">
+            <div class="step-1-inner">
+                <p>9. Нажимаем <b>"Copy string"</b>, вставляем адресную строку браузера, соглашаемся открыть ссылку в приложении. Откроется редактор серверов Shadowsocks - будут всплывающие окна, нажимаем везде <b>"ок"</b></p>
+                <div class="instr-section-single-image">
+                    <img src="./screens/clsswin8.png" alt=""/>
+                </div>
+            </div>
+        </div>
+
+        <div class="block block-guide-step">
+            <div class="step-1-inner">
+                <p>10. Должны автоматически заполниться поля <b>"IP-адрес, порт, пароль и шифрование"</b>. <b>"Порт"</b> и <b>"Порт прокси"</b> меняем на 443, в поле <b>"Плагин"</b> пишем cloak</p>
+                <div class="instr-section-single-image">
+                    <img src="./screens/clsswin9.png" alt=""/>
+                </div>
+            </div>
+        </div>
+
+        <div class="block block-guide-step">
+            <div class="step-1-inner">
+                <p>11. Открываем в Windows Amnezia, <b>“Настройки”</b> => <b>"Share connection"</b> => <b>"Share connection for Cloak"</b>, нажимаем <b>"Copy"</b></p>
+                <div class="instr-section-multiple-images">
+                    <img src="screens/clsswin10.png" alt=""/>
+                    <img src="screens/clsswin11.png" alt=""/>
+                    <img src="screens/clsswin12.png" alt=""/>
+                </div>
+            </div>
+        </div>
+
+        <div class="block block-guide-step">
+            <div class="step-1-inner">
+                <p>12. Ниже в блокноте вставляем строку (без пробелов и переносов слов)</p>
+                <p><b>UID=*;AlternativeNames=;PublicKey=*;KeepAlive=0;ServerName=*;EncryptionMethod=aes-gcm;BrowserSig=chrome;Transport=direct;CDNOriginHost=;ProxyMethod=shadowsocks;NumConn=4</b></p>
+                <p>В строку для UID, PublicKey и ServerName (вместо *) вставляем значения UID, PublicKey и ServerName из скопированного из Amnezia текста (то, что идет после двоеточия, в кавычках, но копируем без кавычек - только само значение)</p>
+                <div class="instr-section-single-image">
+                    <img src="./screens/clsswin13.png" alt=""/>
+                </div>
+            </div>
+        </div>
+
+        <div class="block block-guide-step">
+            <div class="step-1-inner">
+                <p>13. Выделяем строку из п.12 (со вставленными значениями UID ServerName и PublicKey), копируем</p>
+                <div class="instr-section-single-image">
+                    <img src="./screens/clsswin14.png" alt=""/>
+                </div>
+            </div>
+        </div>
+
+        <div class="block block-guide-step">
+            <div class="step-1-inner">
+                <p>14. Возвращаемся в редактор серверов Shadowsocks и в строчку "Опции плагина" вставляем скопированную строку</p>
+                <p>15. Проверяем, что строка вставилась корректно - она должна начинаться с <b>UID</b> и заканчиваться <b>NumConn=4</b></p>
+                <p>16. Нажимаем применить, ок. Если в списке серверов есть сервер с названием  <b>"Новый сервер"</b> - его можно удалить, в списке останется один сервер - будет отображаться его IP</p>
+                <div class="instr-section-single-image">
+                    <img src="./screens/clsswin15.png" alt=""/>
+                </div>
+            </div>
+        </div>
+
+        <div class="block block-guide-step">
+            <div class="step-1-inner">
+                <p>17. В трее щелкаем по приложению Shadowsocks - <b>"Системный прокси-сервер"</b> - <b>"Для всей системы"</b></p>
+                <div class="instr-section-single-image">
+                    <img src="./screens/clsswin16.png" alt=""/>
+                </div>
+            </div>
+        </div>
+
+        <div class="block block-guide-step">
+            <p>Автор гайда: regefone</p>
+        </div>
+
+        <!-- footer -->
+        <div class="block block-footer">
+            <div class="block-footer-inner">
+                <a href="https://amnezia.org/ru" class="href">
+                    <img src="/img/logo-footer.svg" class="logo logo-footer" width="290" height="30" alt="Amnezia" />
+                </a>
+                <div class="download download-footer">
+                    <a class="btn btn-footer" id="main-link-footer"
+                       href="https://amnezia.org/ru/downloads">Скачать Amnezia</a>
+                    <div class="text text-small text-footer">
+                        <span class="text-os" id="link-footer">Полностью бесплатно</span>
+                    </div>
+                </div>
+
+                <!--<div class="text text-footer"></div>-->
+
+                <div class="footer-links">
+                    <a href="https://t.me/amnezia_vpn" target="_blank">Telegram</a>
+                    <a href="https://signal.group/#CjQKIB2gUf8QH_IXnOJMGQWMDjYz9cNfmRQipGWLFiIgc4MwEhAKBONrSiWHvoUFbbD0xwdh" target="_blank">Signal</a>
+                    <a href="https://www.reddit.com/r/AmneziaVPN/" target="_blank">Reddit</a>
+                    <a href="mailto:support@amnezia.org">support@amnezia.org</a>
+                </div>
+
+                <a href="https://privacyaccelerator.org" target="_blank">
+                    <img src="/img/graduate.png" class="logo logo-graduate" width="107"
+                         height="67" alt="Privacy Accelerator graduate"/>
+                </a>
+
+            </div>
+        </div>
+        <!-- end footer -->
+    </section>
+    <script src="/js/fotorama-to-guides.js"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/fotorama/4.6.4/fotorama.css" rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/fotorama/4.6.4/fotorama.js"></script>
+</body>
+
+</html>

@@ -1319,3 +1319,30 @@ h3 {
     padding: 0 70px;
   }
 }
+
+.instr-section-multiple-images {
+  display: flex;
+  flex-wrap: wrap;
+  /*justify-content: space-between;*/
+  gap: 20px;
+}
+
+.instr-section-multiple-images > img {
+  max-width: 276px;
+  height: auto;
+}
+
+@media (max-width: 768px) {
+  .instr-section-multiple-images > img {
+    max-width: 300px;
+    height: auto;
+  }
+  .instr-section-multiple-images {
+    justify-content: center;
+  }
+}
+
+.instr-section-single-image > img {
+  max-width: 600px;
+  height: auto;
+}

@@ -4,7 +4,7 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <title>Amnezia - Supported protocols</title>
+    <title>Amnezia - Connect code</title>
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700;900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="/style.css">
@@ -42,7 +42,7 @@
                             <img src="/img/logo.svg" class="logo logo-personal" width="94" height="25" alt="Amnezia"/>
                         </a>
                         <a href="/" class="href">Instructions</a>
-                        <h2 class="header header-block-top">Supported protocols</h2>
+                        <h2 class="header header-block-top">Guide. Install ShadowSocks with the Cloak plugin for Android</h2>
 
                     </div>
                     <div class="lang_block">
@@ -53,7 +53,7 @@
                         </div>
                         <ul class="lang_list">
                             <li class="lang_item">
-                                <a href="https://ru-docs.amnezia.org/guides/protocols-table-v2/"
+                                <a href="https://ru-docs.amnezia.org/guides/cloak-ss-android/"
                                    class="lang_link">
                                     <span>Русский</span>
                                     <span>Ru</span>
@@ -65,17 +65,87 @@
             </div>
         </div>
 
-        <div class="protocols-table_container">
-            <img src="./screens/proto1.png" />
+        <div class="block block-guide-step">
+            <div class="step-1-inner">
+                <div class="text text-step">
+                    <b>The Amnezia client does not yet support installing the ShadowSocks protocol with the Cloak plugin in the application itself,
+                        However, such a bundle can be created using the Amnezia client and the original ShadowSocks client.</b>
+                </div>
+            </div>
+            <div class="step-1-inner">
+                <p>
+                    1. Buy a VPS from any hosting provider (Amnezia works with any Ubuntu server (officially supported version is 20.04), also supported by Debian 10).
+                </p>
+                <p>
+                    2. Download Amnezia application on Windows, connect to the server through it. Enter VPS data into the application, select <b>"Configure VPN protocols manually"</b>, choose <b>OpenVPN over Cloak</b> protocol.
+                </p>
+            </div>
+
+            <div class="instr-section-multiple-images">
+                <img src="./screens/clssandr1.png" alt=""/>
+                <img src="./screens/clssandr2.png" alt=""/>
+            </div>
+
         </div>
 
         <div class="block block-guide-step">
-            <div class="text text-step">
-                *OpenVPN over Cloak installed on Amnezia 2.0.2 version is not compatible with client versions 3.0.0 and above.
-                To ensure proper functionality, it is necessary to reinstall the protocol.
+            <div class="step-1-inner">
+                <p>3. Install the official ShadowSocks client from "Max Lv" from Google Play on Android</p>
+                <p>4. Install Clock plugin on Android from <a href="https://github.com/cbeuw/Cloak-android/releases/">here</a>, APK file. You will have to allow installation of APKs from unknown sources.</p>
+                <p>5. Open Amnezia on Windows - Select OpenVpn over Clock protocol - Share connection for Shadowsocks</p>
+
+                <div class="instr-section-multiple-images">
+                    <img src="./screens/clssandr3.png" alt=""/>
+                    <img src="./screens/clssandr4.png" alt=""/>
+                    <img src="./screens/clssandr5.png" alt=""/>
+                </div>
             </div>
         </div>
 
+        <div class="block block-guide-step">
+            <div class="step-1-inner">
+                <p>6. Open ShadowSocks client on mobile - Add profile - Scan QR code from Windows client, scanning</p>
+
+                <div class="instr-section-multiple-images">
+                    <img src="./screens/clssandr6.png" alt=""/>
+                    <img src="./screens/clssandr7.png" alt=""/>
+                </div>
+            </div>
+        </div>
+
+        <div class="block block-guide-step">
+            <div class="step-1-inner">
+                <p>7. Open Amnezia on Windows - Select OpenVpn over Clock protocol - Share connection for Cloak</p>
+
+                <div class="instr-section-multiple-images">
+                    <img src="./screens/clssandr8.png" alt=""/>
+                    <img src="./screens/clssandr9.png" alt=""/>
+                    <img src="./screens/clssandr10.png" alt=""/>
+                </div>
+            </div>
+        </div>
+
+        <div class="block block-guide-step">
+            <div class="step-1-inner">
+                <p>8. Open ShadowSocks client on mobile - Go to the created profile - Select Cloak plugin - Configure</p>
+
+                <div class="instr-section-multiple-images">
+                    <img src="./screens/clssandr11.png" alt=""/>
+                    <img src="./screens/clssandr12.png" alt=""/>
+                </div>
+            </div>
+        </div>
+
+        <div class="block block-guide-step">
+            <div class="step-1-inner">
+                <p>Copy and paste the parameters there: UID, Public Key and Server Name from Amnezia on Windows</p>
+                <img src="./screens/clssandr13.png" alt=""/>
+            </div>
+        </div>
+
+        <div class="block block-guide-step">
+            <p>Guide author: jolly_jack</p>
+        </div>
 
         <!-- footer -->
         <div class="block block-footer">

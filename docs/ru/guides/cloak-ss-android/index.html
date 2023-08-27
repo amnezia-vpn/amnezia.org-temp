@@ -4,7 +4,7 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <title>Amnezia - Инструкции и статьи</title>
+    <title>Amnezia - Shadowsocks + Cloak на Android </title>
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700;900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="/style.css">
@@ -39,10 +39,11 @@
                 <div class="section_in">
                     <div class="block-top-inner">
                         <a href="https://amnezia.org/ru" class="href href-logo">
-                            <img src="/img/logo.svg" class="logo logo-personal" width="200" height="20"
-                                 alt="Amnezia"/>
+                            <img src="/img/logo.svg" class="logo logo-personal" width="94" height="25" alt="Amnezia"/>
                         </a>
-                        <h2 class="header header-block-top">Инструкции</h2>
+                        <a href="/" class="href">Инструкции</a>
+                        <h2 class="header header-block-top">ShadowSocks с плагином Cloak для Android</h2>
+
                     </div>
                     <div class="lang_block">
                         <div class="lang_title"><span>Русский</span><span>Ru</span>
@@ -52,7 +53,8 @@
                         </div>
                         <ul class="lang_list">
                             <li class="lang_item">
-                                <a href="https://en-docs.amnezia.org" class="lang_link">
+                                <a href="https://en-docs.amnezia.org/guides/cloak-ss-android/"
+                                   class="lang_link">
                                     <span>English</span>
                                     <span>En</span>
                                 </a>
@@ -63,83 +65,91 @@
             </div>
         </div>
 
-        <section class="block block-guide-step guides">
-            <div class="guide-item">
-                <a href="guides/hosting-instructions" target="">
-                    Запуск своего VPN
-                </a>
+        <div class="block block-guide-step">
+            <div class="step-1-inner">
+                <div class="text text-step">
+                    <b>Использование протокола ShadowSocks с плагином Cloak пока не поддерживается клиентом Amnezia,
+                    однако можно установить и настроить ShadowSocks и Cloak с помощью клиента Amnezia,
+                        а их связку использовать в оригинальном клиенте ShadowSocks.</b>
+                </div>
             </div>
-            <div class="guide-item">
-                <a href="guides/setup-wizard-v2" target="">
-                    Установка с помощью - Run Setup Wizard
-                </a>
+            <div class="step-1-inner">
+                <p>
+                    1. Покупаем VPS у любого хостинг-провайдера (Amnezia работает с любыми серверами с операционной системой Ubuntu (официально поддерживаемая версия - 20.04), так же поддерживается Debian 10).
+                </p>
+                <p>
+                    2. Скачиваем приложение Amnezia на Windows версии 2.0.2, подключаемся через него к серверу. Вносим данные VPS в приложение, выбираем <b>“Configure VPN protocols manually”</b>, выбираем протокол <b>OpenVPN over Cloak</b>.
+                </p>
             </div>
-            <div class="guide-item">
-                <a href="guides/setup-manual-v2" target="">
-                    Установка с помощью - Configure VPN protocols manually
-                </a>
+
+            <div class="instr-section-multiple-images">
+                <img src="./screens/clssandr1.png" alt=""/>
+                <img src="./screens/clssandr2.png" alt=""/>
             </div>
-            <div class="guide-item">
-                <a href="guides/connect-code-v2" target="">
-                    Подключение через Сonnection code
-                </a>
+
+        </div>
+
+        <div class="block block-guide-step">
+            <div class="step-1-inner">
+                <p>3. Устанавливаем на Android официальный клиент ShadowSocks от "Max Lv" из Google Play</p>
+                <p>4. Устанавливаем на Android плагин Clock <a href="https://github.com/cbeuw/Cloak-android/releases/">отсюда</a>, файл в формате APK<br/> Придется разрешить установку APK из неизвестных источников.</p>
+                <p>5. Открываем на Windows Amnezia - Выбираем протокол OpenVpn over Clock - Share connection for Shadowsocks</p>
+
+                <div class="instr-section-multiple-images">
+                    <img src="./screens/clssandr3.png" alt=""/>
+                    <img src="./screens/clssandr4.png" alt=""/>
+                    <img src="./screens/clssandr5.png" alt=""/>
+                </div>
             </div>
-            <div class="guide-item">
-                <a href="guides/connect-file-v2" target="">
-                    Подключение через файл
-                </a>
+        </div>
+
+        <div class="block block-guide-step">
+            <div class="step-1-inner">
+                <p>6. Открываем на мобильном клиент ShadowSocks - Добавить профиль - Сканировать QR-код с клиента Windows, сканируем</p>
+
+                <div class="instr-section-multiple-images">
+                    <img src="./screens/clssandr6.png" alt=""/>
+                    <img src="./screens/clssandr7.png" alt=""/>
+                </div>
             </div>
-            <div class="guide-item">
-                <a href="guides/private-dns-v2" target="">
-                    Установка сервера с собственным DNS
-                </a>
+        </div>
+
+        <div class="block block-guide-step">
+            <div class="step-1-inner">
+                <p>7. Открываем на Windows Amnezia - Выбираем протокол OpenVpn over Clock - Share connection for Cloak</p>
+
+                <div class="instr-section-multiple-images">
+                    <img src="./screens/clssandr8.png" alt=""/>
+                    <img src="./screens/clssandr9.png" alt=""/>
+                    <img src="./screens/clssandr10.png" alt=""/>
+                </div>
             </div>
-            <div class="guide-item">
-                <a href="guides/change-dns-v2" target="">
-                    Смена DNS
-                </a>
+        </div>
+
+        <div class="block block-guide-step">
+            <div class="step-1-inner">
+                <p>8. Открываем на мобильном клиент ShadowSocks - Заходим в созданный профиль - Выбираем плагин Cloak - Настроить</p>
+
+                <div class="instr-section-multiple-images">
+                    <img src="./screens/clssandr11.png" alt=""/>
+                    <img src="./screens/clssandr12.png" alt=""/>
+                </div>
             </div>
-            <div class="guide-item">
-                <a href="guides/protocols-table-v2" target="">
-                    Поддерживаемые протоколы
-                </a>
+        </div>
+
+        <div class="block block-guide-step">
+            <div class="step-1-inner">
+                <p>9. Копируем и вставляем туда параметры: UID, Public Key и Server Name из Amnezia на Windows</p>
+
+
+                    <img src="./screens/clssandr13.png" alt=""/>
+
             </div>
-            <div class="guide-item">
-                <a href="guides/logs-v2" target="">
-                    Работа с логами
-                </a>
-            </div>
-            <div class="guide-item">
-                <a href="guides/general-info-v2" target="">
-                    Описание интерфейса приложения
-                </a>
-            </div>
-            <div class="guide-item">
-                <a href="guides/delete-from-server-v2" target="">
-                    Удаление AmneziaVPN с сервера
-                </a>
-            </div>
-            <div class="guide-item">
-                <a href="guides/protocols-info-v2" target="">
-                    Описание протоколов
-                </a>
-            </div>
-            <div class="guide-item">
-                <a href="guides/alt-clients" target="">
-                    Список альтернативных клиентов
-                </a>
-            </div>
-            <div class="guide-item">
-                <a href="guides/cloak-ss-android" target="">
-                    Гайд. Установка ShadowSocks с плагином Cloak для Android
-                </a>
-            </div>
-            <div class="guide-item">
-                <a href="guides/cloak-ss-win" target="">
-                    Гайд. Установка ShadowSocks с плагином Cloak для Windows
-                </a>
-            </div>
-        </section>
+        </div>
+
+        <div class="block block-guide-step">
+            <p>Автор гайда: jolly_jack</p>
+        </div>
 
         <!-- footer -->
         <div class="block block-footer">
